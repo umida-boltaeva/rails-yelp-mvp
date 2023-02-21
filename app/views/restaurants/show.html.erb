@@ -2,7 +2,6 @@
 <p><%= @restaurant.address %></p>
 <p><%= @restaurant.phone_number %></p>
 <p><%= @restaurant.category %></p>
-<%= link_to "Back to restaurants", restaurants_path %>
 
 <div class='mt-4'>
   <h2>Reviews</h2>
@@ -15,5 +14,5 @@
     </div>
   <% end %>
 
-  <%= link_to 'Create review', new_restaurant_review_path(@restaurant), class: 'btn btn-primary' %>
+  <%= link_to 'Create review', new_restaurant_review_path(@restaurant), class: 'btn btn-primary mt-4' %>
 </div>
